@@ -113,7 +113,7 @@ button:active {
   background-color: rgb(203, 230, 253);
 }
 
-.error {
+#error {
   font-size: 25px;
   color: coral;
 }
