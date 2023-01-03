@@ -67,6 +67,14 @@ button {
   background-color: rgb(253, 243, 229);
 }
 
+button:hover {
+  filter: brightness(90%);
+}
+
+button:active {
+  filter: brightness(75%);
+}
+
 .row-1, .row-2, .row-3, .row-4, .row-5 {
   display: flex;
   gap: 8px;
