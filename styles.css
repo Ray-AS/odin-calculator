@@ -112,3 +112,8 @@ button:active {
 .operation, .operation-2 {
   background-color: rgb(203, 230, 253);
 }
+
+.error {
+  font-size: 25px;
+  color: coral;
+}
