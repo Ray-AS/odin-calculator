@@ -13,42 +13,43 @@
 
     <div class="calculator">
       <div class="display">
-        <div class="upper-display"></div>
-        <div class="lower-display"></div>
+        <div class="upper-display">56 × 2</div>
+        <div class="lower-display">112111111111111</div>
       </div>
       <div class="buttons">
         <div class="row-1">
-          <button class="clear">Clear</button>
-          <button class="delete">Delete</button>
+          <button class="clear" value="clear">Clear</button>
+          <button class="delete" value="delete">Delete</button>
         </div>
         <div class="row-2">
-          <button class="number five-row">7</button>
-          <button class="number five-row">8</button>
-          <button class="number five-row">9</button>
-          <button class="operation five-row">x²</button>
-          <button class="operation five-row">√x</button>
+          <button class="number five-row" value="7">7</button>
+          <button class="number five-row" value="8">8</button>
+          <button class="number five-row" value="9">9</button>
+          <button class="operation five-row" value="square">x²</button>
+          <button class="operation five-row" value="sqrt">√x</button>
         </div>
         <div class="row-3">
-          <button class="number five-row">4</button>
-          <button class="number five-row">5</button>
-          <button class="number five-row">6</button>
-          <button class="operation five-row">+</button>
-          <button class="operation five-row">-</button>
+          <button class="number five-row" value="4">4</button>
+          <button class="number five-row" value="5">5</button>
+          <button class="number five-row" value="6">6</button>
+          <button class="operation five-row" value="+">+</button>
+          <button class="operation five-row" value="-">-</button>
         </div>
         <div class="row-4">
-          <button class="number five-row">1</button>
-          <button class="number five-row">2</button>
-          <button class="number five-row">3</button>
-          <button class="operation five-row">×</button>
-          <button class="operation five-row">÷</button>
+          <button class="number five-row" value="1">1</button>
+          <button class="number five-row" value="2">2</button>
+          <button class="number five-row" value="3">3</button>
+          <button class="operation five-row" value="×">×</button>
+          <button class="operation five-row" value="÷">÷</button>
         </div>
         <div class="row-5">
-          <button class="number-0">0</button>
-          <button class="modification">.</button>
-          <button class="modification">+/-</button>
-          <button class="operation-2">=</button>
+          <button class="number-0" value="0">0</button>
+          <button class="modification" id="decimal" value=".">.</button>
+          <button class="modification" value="negation">+/-</button>
+          <button class="operation-2" value="=">=</button>
         </div>
       </div>
     </div>
+    <div class="error"></div>
   </body>
 </html>
