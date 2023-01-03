@@ -200,10 +200,10 @@ const callOperate = function(newOperation = null)
 {
   if(num1 && num2 && operation)
   {
-    num1 = round(operate(operation, num1, num2).toString());
     if(!newOperation)
     {
       updateUpperText(num1, operation, num2);
+      num1 = round(operate(operation, num1, num2).toString());
       updateLowerText(num1);
       num2 = '';
       operation = '';
@@ -212,6 +212,7 @@ const callOperate = function(newOperation = null)
     else
     {
       updateUpperText(num1, newOperation);
+      num1 = round(operate(operation, num1, num2).toString());
       num2 = '';
       operation = newOperation;
     }
