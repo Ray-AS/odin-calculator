@@ -24,3 +24,8 @@ let operations = {
   '*': multiply,
   '/': divide,
 };
+
+function operate(operator, operand1, operand2)
+{
+  return operations[operator](operand1, operand2);
+}
