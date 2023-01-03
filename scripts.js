@@ -200,7 +200,15 @@ const callOperate = function(newOperation = null)
 {
   if(num1 && num2 && operation)
   {
-    if(!newOperation)
+    if(operation === '/' && num2 === '0')
+    {
+      updateUpperText(num1, operation, num2);
+      num1 = '42';
+      updateLowerText(num1);
+      num2 = '';
+      operation = '';
+    }
+    else if(!newOperation)
     {
       updateUpperText(num1, operation, num2);
       num1 = round(operate(operation, num1, num2).toString());
