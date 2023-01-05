@@ -269,6 +269,7 @@ const sqrt = function()
 const actions = {
   'clear': clear,
   'delete': deleteLastChar,
+  'Backspace': deleteLastChar,
   'negation': negation,
   '=': callOperate,
   'square': square,
@@ -290,10 +291,11 @@ const actions = {
   '/': updateWithOperation,
 };
 
+const noParameters = ['clear', 'delete', 'Backspace', 'negation', '=', 'square', 'sqrt'];
+
 // Call relevant function depending on value passed, and pass arguments if required
 function updateDisplay(character)
 {
-  const noParameters = ['clear', 'delete', 'negation', '=', 'square', 'sqrt'];
   if(noParameters.includes(character))
   {
     actions[character]();
@@ -309,3 +311,5 @@ buttons.forEach(button => {
     updateDisplay(button.currentTarget.value);
   });
 });
+
+document.addEventListener('keydown', (event) => updateDisplay(event.key));
